@@ -1,11 +1,11 @@
-import Header from "../components/Header";
+import Page from "../components/Page";
 
 const App = ({ Component, PageProps }) => {
   return(
     <> 
-      <Header headerMsg={"Yay! I am the header prop"}>
+      <Page>
         <Component {...PageProps} />
-      </Header>
+      </Page>
     </>
   )
 }

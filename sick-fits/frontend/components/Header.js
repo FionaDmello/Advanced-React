@@ -1,13 +1,19 @@
-import PropTypes from "prop-types"
+import Link from "next/link";
+import PropTypes from "prop-types";
+import Nav from "./Navbar";
 
-const Header = ({ children, headerMsg }) => {
+const Header = () => {
   return(
     <>
-    <div>
-      This is the Header!
-      <p>{headerMsg}</p>
-    </div>
-    {children}
+      <div className="header-logo">
+        <Link href="/">Sick Fits</Link>
+      </div>
+      <div className="header-nav">
+        <Nav />
+      </div>
+      <div className="header-search">
+        Search
+      </div>
     </>
   )
 }
